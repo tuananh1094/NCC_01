@@ -13,4 +13,6 @@ u8 up(void);
 u8 down(void);
 u8 ok(void);
 
+void buzz(u8 bip);
+
 #endif
