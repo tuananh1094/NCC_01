@@ -11,6 +11,6 @@ void led7Scan(u8 num);
 u8 set(void);
 u8 up(void);
 u8 down(void);
-u8 ok(void)
+u8 ok(void);
 
 #endif

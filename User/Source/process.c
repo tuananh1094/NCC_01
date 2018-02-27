@@ -18,7 +18,7 @@ __interrupt void ISR_T4(void)			// period 1ms
 	}
 	else
 	{
-	  	scanLed(x++);
+	  	led7Scan(x++);
 		if(x == 4) x = 0;
 		flagLed = 0;
 	}
@@ -88,12 +88,54 @@ void led7Scan(u8 num)
 ------------------------------------------------------------------------------*/
 u8 set(void)
 {
-	if(SET == PRESS)
+	if(BT_SET == PRESS)
 	{
 		delay_ms(20);
-		if(SET == PRESS)
+		if(BT_SET == PRESS)
 		{
-			while(SET == PRESS);
+			while(BT_SET == PRESS);
+			return PRESS;
+		}
+	}
+	return NOT_PRESS;
+}
+
+u8 up(void)
+{
+	if(BT_UP == PRESS)
+	{
+		delay_ms(20);
+		if(BT_UP == PRESS)
+		{
+			while(BT_UP == PRESS);
+			return PRESS;
+		}
+	}
+	return NOT_PRESS;
+}
+
+u8 down(void)
+{
+	if(BT_DOWN == PRESS)
+	{
+		delay_ms(20);
+		if(BT_DOWN == PRESS)
+		{
+			while(BT_DOWN == PRESS);
+			return PRESS;
+		}
+	}
+	return NOT_PRESS;
+}
+
+u8 ok(void)
+{
+	if(BT_OK == PRESS)
+	{
+		delay_ms(20);
+		if(BT_OK == PRESS)
+		{
+			while(BT_OK == PRESS);
 			return PRESS;
 		}
 	}
