@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <settings>
     <Stack>
         <FillEnabled>0</FillEnabled>
@@ -48,7 +48,7 @@
         <Freq>16000000</Freq>
     </Simulator>
     <DebugChecksum>
-        <Checksum>-1672138245</Checksum>
+        <Checksum>132861614</Checksum>
     </DebugChecksum>
     <CallStack>
         <ShowArgs>0</ShowArgs>
@@ -71,6 +71,11 @@
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
     </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
     <Breakpoints>
         <Count>0</Count>
     </Breakpoints>
@@ -87,5 +92,6 @@
     </Aliases>
     <DebuggerSettings>
         <DisableInterruptsWhenStepping>0</DisableInterruptsWhenStepping>
+        <LeaveTargetRunning>0</LeaveTargetRunning>
     </DebuggerSettings>
 </settings>

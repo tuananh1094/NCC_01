@@ -103,6 +103,9 @@ USER DEFINE - USER DEFINE - USER DEFINE - USER DEFINE - USER DEFINE - USER DEFI
 #define PRESS			0
 #define	NOT_PRESS		1
 
+#define RELAY_ON		1
+#define RELAY_OFF		0
+
 #endif
 
 /*------------------------------KET THUC FILE-------------------------------
