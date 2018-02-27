@@ -1,0 +1,15 @@
+"-p" 
+
+"E:\SetUp\IAR\stm8\config\ddf\iostm8s105c4.ddf" 
+
+"--mcuname" 
+
+"STM8S105C4" 
+
+"--verify_download" 
+
+"--erase_memory" 
+
+
+
+
