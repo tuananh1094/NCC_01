@@ -39,7 +39,6 @@ typedef   float            float32_t;
 ******************************************************************************/
 #include "defstm8s.h"
 #include "stm8s_clk.h"
-#include "stm8s_uart2.h"
 #include "stm8s_iwdg.h"
 #include "stm8s_tim2.h"
 #include "stm8s_tim4.h"
@@ -71,14 +70,14 @@ DEFINE GPIO - DEFINE GPIO - DEFINE GPIO - DEFINE GPIO - DEFINE GPIO - DEFINE GPI
 /******************************************************************************
 USER DEFINE - USER DEFINE - USER DEFINE - USER DEFINE - USER DEFINE - USER DEFI 
 ******************************************************************************/
-#define LED7_A			PORTB_3
-#define LED7_B			PORTB_2
-#define LED7_C			PORTB_1
-#define LED7_D			PORTB_0
-#define LED7_E			PORTB_7
+#define LED7_A			PORTB_7
+#define LED7_B			PORTB_5
+#define LED7_C			PORTB_0
+#define LED7_D			PORTB_2
+#define LED7_E			PORTB_3
 #define LED7_F			PORTB_6
-#define LED7_G			PORTB_5
-#define LED7_DP			PORTB_4
+#define LED7_G			PORTB_4
+#define LED7_DP			PORTB_1
 
 #define CTR1			PORTC_1
 #define CTR2			PORTE_5
@@ -103,8 +102,8 @@ USER DEFINE - USER DEFINE - USER DEFINE - USER DEFINE - USER DEFINE - USER DEFI
 #define PRESS			0
 #define	NOT_PRESS		1
 
-#define RELAY_ON		1
-#define RELAY_OFF		0
+#define RELAY_ON		0
+#define RELAY_OFF		1
 
 #endif
 

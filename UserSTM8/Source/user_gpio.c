@@ -56,10 +56,10 @@ Tra Ve      :   Khong.
 void GPIO_Configuration(void)
 {
 /********************************* PORTA *************************************/
-    DDRA=0x00;
+    DDRA=0xFF;
     CRA1=0xFF;
-    CRA2=0x00;
-    PORTA=0xFF;
+    CRA2=0xFF;
+    PORTA=0xDF;
 /********************************* PORTB *************************************/
     DDRB=0xFF;
     CRB1=0xFF;
@@ -71,10 +71,10 @@ void GPIO_Configuration(void)
     CRC2=0xFF;
     PORTC=0xFF;
 /********************************* PORTD *************************************/
-    DDRD=0xFF;
+    DDRD=0x0F;
     CRD1=0xFF;
-    CRD2=0xFF;
-    PORTD=0xEF;
+    CRD2=0x0F;
+    PORTD=0xFF;
 /********************************* PORTE *************************************/
     DDRE=0xFF;
     CRE1=0xFF;

@@ -48,7 +48,7 @@ void TIM4_Configuration()
 {
     CLK_PeripheralClockConfig(CLK_PERIPHERAL_TIMER4,ENABLE);// Cho phep su dung nguon clock cho Timer4
     TIM4_ARRPreloadConfig(ENABLE);                          // Bat che do Autoreload
-    TIM4_TimeBaseInit(TIM4_PRESCALER_128, 125);             // Bo chia timer 128, thoi gia  2ms
+    TIM4_TimeBaseInit(TIM4_PRESCALER_128, 250);             // Bo chia timer 128, thoi gia  2ms
     TIM4_ITConfig(TIM4_IT_UPDATE,ENABLE);                   // Chon su kien ngat update
     TIM4_Cmd(ENABLE);                                       // cho phep chay Timer4
 }

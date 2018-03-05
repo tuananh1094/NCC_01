@@ -15,8 +15,6 @@
     #error "Include Sai File main.h"
 #endif
 
-
- 
 void main(void)
 {
 /********************************* SYSTEM *************************************/
@@ -42,8 +40,13 @@ void main(void)
     EEPROM_Configuration();   
 /*_________________________________ USER _____________________________________*/
     
+	enableInterrupts();
+	
+	readRom();
+	CTRP = LED_ON;
+	led7OutTime(0, 0);
     while(1)
-    {
+	{
 		__mainProcess();
     }
 }

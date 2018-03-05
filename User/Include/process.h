@@ -4,6 +4,7 @@
 #include "main.h"
 
 void __mainProcess(void);
+void __setFuntion(void);
 
 void led7Out(u8 dat);
 void led7Scan(u8 num);
@@ -11,7 +12,9 @@ void led7OutTime(u8 hour, u8 min);
 
 u8 set(void);
 u8 up(void);
+u8 upHold(void);
 u8 down(void);
+u8 downHold(void);
 u8 ok(void);
 
 void buzz(u8 bip);
