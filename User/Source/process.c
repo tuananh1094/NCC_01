@@ -43,8 +43,8 @@ __interrupt void ISR_T2(void)			// period 50ms
 	if(flagRun == RUN)
 	{
 		count_50ms++;
-		if(count_50ms%2 == 0) CTRP = ~CTRP;
-		if(count_50ms == 4)			// timer 1s
+		if(count_50ms%10 == 0) CTRP = ~CTRP;
+		if(count_50ms == 20)			// timer 1s
 		{
 			count_50ms = 0;
 			sec++;
@@ -56,7 +56,7 @@ __interrupt void ISR_T2(void)			// period 50ms
 		}
 		
 	}
-	if(blinkSet == RUN)
+	else if(blinkSet == RUN)
 	{
 		countBlink ++;
 		if(countBlink == 4)
